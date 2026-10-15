@@ -19,3 +19,14 @@ if [ $? -ne 0 ]; then
 else
     echo "Installing mysql is ...SUCCESS"
 fi
+
+echo "Install  ngnix"
+dnf list install ngnix
+
+if [ $? -eq 0 ]; then
+    echo "Installing ngnix is ..SKIPPED"
+    exit1
+else
+   echo "Installing ngnix"
+   dnf install ngnix -y
+fi
