@@ -26,6 +26,6 @@ dnf list install ngnix
 if [ $? -ne 0 ]; then
     echo "Installing ngnix is ..SKIPPED"
 else
-   echo "Installing ngnix"
-   dnf install ngnix -y
+    echo "Installing ngnix"
+    dnf install ngnix -y
 fi
