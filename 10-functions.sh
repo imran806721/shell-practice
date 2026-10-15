@@ -13,7 +13,7 @@ VALIDATE(){
         echo "Installing $1 is ...FAILED"
         exit1
     else
-        echo "Installing $! is ...SUCCESS"
+        echo "Installing $1 is ...SUCCESS"
 }
 
     
