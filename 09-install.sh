@@ -10,15 +10,15 @@ fi
 echo "iam continiue"
     
 
-# echo "Installing mysql"
-# dnf install mysql -y
+echo "Installing mysql"
+dnf install mysql -y
 
-# if [ $? -ne 0 ]; then
-#     echo "Installing mysql is ...SKIPPED"
-#     exit1
-# else
-#     echo "Installing mysql is ...SUCCESS"
-# fi
+if [ $? -ne 0 ]; then
+    echo "Installing mysql is ...SKIPPED"
+    exit1
+else
+    echo "Installing mysql is ...SUCCESS"
+fi
 
 echo "Install  ngnix"
 dnf list installed nginx
