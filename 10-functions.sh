@@ -14,6 +14,7 @@ VALIDATE(){
         exit1
     else
         echo "Installing $1 is ...SUCCESS"
+    fi
 }
 
     
