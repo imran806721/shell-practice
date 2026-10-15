@@ -9,7 +9,7 @@ if [ $USERID -ne 0 ]; then
 fi
 # echo "iam continiue"
 VALIDATE(){
-    if [ $2 -ne o ]; then
+    if [ $2 -ne 0 ]; then
         echo "Installing $1 is ...FAILED"
         exit1
     else
