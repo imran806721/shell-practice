@@ -21,7 +21,7 @@ echo "iam continiue"
 # fi
 
 echo "Install  ngnix"
-dnf list install ngnix
+dnf list installed ngnix
 
 if [ $? -ne 0 ]; then
     echo "Installing ngnix is ..SKIPPED"
