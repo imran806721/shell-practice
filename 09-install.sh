@@ -23,7 +23,7 @@ fi
 echo "Install  ngnix"
 dnf list installed nginx
 
-if [ $? -ne 0 ]; then
+if [ $? -eq 0 ]; then
     echo "Installing nginx is ..SKIPPED"
     exit1
 else
