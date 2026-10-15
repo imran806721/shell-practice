@@ -13,14 +13,14 @@ fi
 
 # first arg -> what are you trying to install
 # second arg -> exit code
-# VALIDATE(){
-#     if [ $2 -ne 0 ]; then
-#         echo "$TIMESTAMP [ERROR] Installing $1 is ... FAILED" | tee -a $LOGS_FILE
-#         exit 1
-#     else
-#         echo "$TIMESTAMP [INFO] Installing $1 is ... SUCCESS" | tee -a $LOGS_FILE
-#     fi
-# }
+VALIDATE(){
+    if [ $2 -ne 0 ]; then
+        echo "$TIMESTAMP [ERROR] Installing $1 is ... FAILED" | tee -a $LOGS_FILE
+        exit 1
+    else
+        echo "$TIMESTAMP [INFO] Installing $1 is ... SUCCESS" | tee -a $LOGS_FILE
+    fi
+}
 
 
 for package in $@
